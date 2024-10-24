@@ -1,0 +1,47 @@
+{
+	// Set indentation to 2 spaces
+	"editor.tabSize": 2,
+
+	// Enable Git auto-fetch
+	"git.autofetch": true,
+
+	// Enable file nesting in the explorer
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"*.ts": "${capture}.test.ts",
+		"*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts, ${capture}.test.js",
+		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, *.config.js, *.config.ts, *.config.cjs, *.config.mjs , *.json, .*, *.ts"
+	},
+
+	// Automatically add missing imports for TypeScript
+	"editor.codeActionsOnSave": {
+		"source.addMissingImports.ts": "explicit"
+	},
+
+	// Suggestion mode when auto-completing
+	"editor.suggest.insertMode": "replace",
+
+	// Format files on save
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "biome",
+
+	// Ensure consistent newline at the end of files
+	"files.insertFinalNewline": true,
+
+	// Exclude node_modules and .next from search and file explorer
+	"files.exclude": {
+		"node_modules/": true,
+		".next/": true
+	},
+
+	// Enable TypeScript validation
+	"typescript.validate.enable": true,
+
+	// Enable JavaScript validation (Next.js includes a lot of JS too)
+	"javascript.validate.enable": true,
+
+	// Enable Biome formatting for supported files
+	"[javascript, javascriptreact, typescript, typescriptreact, json]": {
+		"editor.defaultFormatter": "biome"
+	}
+}

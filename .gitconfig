@@ -1,0 +1,10 @@
+# automatically set up remotes
+[push]
+	autoSetupRemote = true
+	default = current
+
+# displays better `git diff`
+[core]
+	pager = delta
+[delta]
+	line-numbers = true
