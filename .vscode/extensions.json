@@ -1,9 +1,17 @@
 {
-  "recommendations": [
-      // "dbaeumer.vscode-eslint",
-      // "esbenp.prettier-vscode",
-      // "EditorConfig.EditorConfig",
-      // "bradlc.vscode-tailwindcss",
-      // "wix.vscode-import-cost"
-  ]
+	"recommendations": [
+		"biomejs.biome",
+		"usernamehw.errorlens",
+		"WallabyJs.console-ninja",
+		"Prisma.prisma",
+		"bradlc.vscode-tailwindcss",
+		"formulahendry.auto-rename-tag",
+		"aaron-bond.better-comments",
+		"YoavBls.pretty-ts-errors"
+		// "dbaeumer.vscode-eslint",
+		// "esbenp.prettier-vscode",
+		// "EditorConfig.EditorConfig",
+		// "bradlc.vscode-tailwindcss",
+		// "wix.vscode-import-cost"
+	]
 }

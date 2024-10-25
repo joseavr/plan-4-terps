@@ -15,15 +15,21 @@
 
 	// Automatically add missing imports for TypeScript
 	"editor.codeActionsOnSave": {
-		"source.addMissingImports.ts": "explicit"
+		"source.addMissingImports.ts": "explicit",
+		"quickfix.biome": "explicit"
+	},
+	"notebook.codeActionsOnSave": {
+		"quickfix.biome": "explicit"
 	},
 
 	// Suggestion mode when auto-completing
 	"editor.suggest.insertMode": "replace",
 
 	// Format files on save
+	"editor.defaultFormatter": "biomejs.biome",
+	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "biome",
+	"editor.formatOnPaste": true,
 
 	// Ensure consistent newline at the end of files
 	"files.insertFinalNewline": true,
@@ -41,7 +47,7 @@
 	"javascript.validate.enable": true,
 
 	// Enable Biome formatting for supported files
-	"[javascript, javascriptreact, typescript, typescriptreact, json]": {
-		"editor.defaultFormatter": "biome"
+	"[javascript, javascriptreact, typescript, typescriptreact, json, css]": {
+		"editor.defaultFormatter": "biomejs.biome"
 	}
 }
