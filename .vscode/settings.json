@@ -36,10 +36,10 @@
 	"files.insertFinalNewline": true,
 
 	// Exclude node_modules and .next from search and file explorer
-	"files.exclude": {
-		"node_modules/": true,
-		".next/": true
-	},
+	// "files.exclude": {
+	// 	"node_modules/": true,
+	// 	".next/": true
+	// },
 
 	// Enable TypeScript validation
 	"typescript.validate.enable": true,
