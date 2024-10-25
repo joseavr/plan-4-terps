@@ -23,7 +23,6 @@
 			"correctness": {
 				"noUnusedImports": "warn",
 				"noUnusedVariables": "warn",
-				"noUnusedFunctionParameters": "warn",
 				"noUnsafeOptionalChaining": "error",
 				"noUnsafeFinally": "error"
 			},
