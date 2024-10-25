@@ -16,7 +16,8 @@
 	// Automatically add missing imports for TypeScript
 	"editor.codeActionsOnSave": {
 		"source.addMissingImports.ts": "explicit",
-		"quickfix.biome": "explicit"
+		"quickfix.biome": "explicit",
+		"source.organizeImports.biome": "explicit"
 	},
 	"notebook.codeActionsOnSave": {
 		"quickfix.biome": "explicit"
@@ -47,7 +48,12 @@
 	"javascript.validate.enable": true,
 
 	// Enable Biome formatting for supported files
-	"[javascript, javascriptreact, typescript, typescriptreact, json, css]": {
+	"[javascript][javascriptreact][typescript][typescriptreact][json][css][tailwindcss]": {
 		"editor.defaultFormatter": "biomejs.biome"
+	},
+
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma",
+		"editor.formatOnSave": true
 	}
 }
