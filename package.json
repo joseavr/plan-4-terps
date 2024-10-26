@@ -5,6 +5,10 @@
 	"prisma": {
 		"schema": "src/database/prisma"
 	},
+
+	"engines": {
+		"node": "20.x.x"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",

@@ -3,8 +3,13 @@
 	autoSetupRemote = true
 	default = current
 
-# displays better `git diff`
-[core]
-	pager = delta
-[delta]
-	line-numbers = true
+# show whole log history at once
+[pager]
+	log = false
+
+# displays better `git diff`	
+# to have this option, download: brew install git-delta
+# [core]
+# 	pager = delta
+# [delta]
+# 	line-numbers = true
