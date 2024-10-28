@@ -2,18 +2,25 @@
 	"name": "plan4terps",
 	"version": "0.1.0",
 	"private": true,
-	"prisma": {
-		"schema": "src/database/prisma"
-	},
-
 	"engines": {
-		"node": "20.x.x"
+		"node": "18.20.4"
 	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "npx @biomejs/biome check --write"
+		"lint": "npx @biomejs/biome check --write",
+		"db:seed": "npx prisma db seed",
+		"db:studio": "npx prisma studio",
+		"db:migrate:local": "npx prisma migrate dev",
+		"db:migrate:prod": "prisma generate && npx prisma migrate deploy",
+
+		"db:deploy": "prisma migrate deploy",
+		"db:push": "npx prisma db push"
+	},
+	"prisma": {
+		"schema": "src/database/prisma",
+		"seed": "ts-node —compiler-options {\"module\": \"CommonJS\"} src/database/seed.ts"
 	},
 	"dependencies": {
 		"@auth/prisma-adapter": "^2.7.2",
