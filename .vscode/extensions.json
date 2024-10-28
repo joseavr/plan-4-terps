@@ -2,12 +2,12 @@
 	"recommendations": [
 		"biomejs.biome",
 		"usernamehw.errorlens",
-		// "WallabyJs.console-ninja",
 		"Prisma.prisma",
 		"bradlc.vscode-tailwindcss",
 		"formulahendry.auto-rename-tag",
 		"aaron-bond.better-comments",
 		"YoavBls.pretty-ts-errors",
-		"waderyan.gitblame"
+		"waderyan.gitblame",
+		"mk12.better-git-line-blame"
 	]
 }
