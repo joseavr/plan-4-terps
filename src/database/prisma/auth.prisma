@@ -36,7 +36,7 @@ model Account {
 
   //? A record can be identified by combining `provider` and `providerAccountId` -> 'provider_providerAccountId'
   @@id([provider, providerAccountId])
-  // @@unique([provider, providerAccountId])  // Set both 'provider' and 'providerAccountId' unique. Not set because @@id infers uniqueness
+  // @@unique([provider, providerAccountId])  // Set both 'provider' and 'providerAccountId' unique. @unique not set because @@id infers uniqueness
   @@map("accounts")
 }
 

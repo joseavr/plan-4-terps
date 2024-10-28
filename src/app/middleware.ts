@@ -1,4 +1,4 @@
-import { auth } from "@/auth"
+import { auth } from "@/features/auth"
 import type { MiddlewareConfig, NextRequest } from "next/server"
 
 export default auth(async function middleware(req: NextRequest) {
