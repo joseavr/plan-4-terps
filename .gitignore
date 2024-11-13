@@ -29,8 +29,12 @@ yarn-error.log*
 .env*.local
 .env*.development
 .env*.staging
-.env*.testing
+.env*.production
 .env
+
+# databases
+dump.sql
+local-db.*
 
 # vercel
 .vercel
